@@ -1,0 +1,101 @@
+Ticket ID: AI-C#-201
+
+Title: Build Customer CRUD API with Tests and AI Review
+
+Description:
+We need to build a Customer Management API as part of a demo for AI-driven development workflow.
+The API should support basic CRUD operations using clean architecture and follow Web API standards.
+
+Requirements:
+
+1. Create API endpoint to **Create Customer**
+2. Create API endpoint to **Get Customer Details**
+3. Create API endpoint to **Update Customer**
+4. Create API endpoint to **Delete Customer**
+5. Use `BaseApiController` for all controllers
+6. Implement request validation using `ValidationResponse` pattern
+7. Add proper logging for request and response
+8. Implement try-catch for exception handling
+9. Use `ApiResponse` format for all responses
+10. Follow clean coding standards and naming conventions
+11. Ensure no null reference issues and proper defensive coding
+12. Prepare code structure for Controllers, Services, and Models
+
+Acceptance Criteria:
+
+* Customer can be created successfully
+* Customer details can be fetched correctly
+* Customer data can be updated
+* Customer can be deleted
+* All APIs return standardized ApiResponse
+* Validation errors handled properly
+* No unhandled exceptions
+* Code is modular and readable
+* Logging is implemented correctly
+
+API Details:
+
+Create Customer:
+
+* Method: POST
+* Route: /customer/create
+* Input: Name, Email
+* Output: Customer ID and success message
+
+Get Customer Details:
+
+* Method: GET
+* Route: /customer/get
+* Input: CustomerId
+* Output: Customer details
+
+Update Customer:
+
+* Method: POST
+* Route: /customer/update
+* Input: CustomerId, Name, Email
+* Output: Success message
+
+Delete Customer:
+
+* Method: POST
+* Route: /customer/delete
+* Input: CustomerId
+* Output: Success message
+
+Additional Instructions:
+
+* Use best practices for C# Web API development
+* Follow BaseApiController helpers for logging and responses
+* Avoid magic strings; use constants where needed
+* Ensure code is production-ready (basic level)
+* Maintain folder structure:
+
+  * Controllers/
+  * Services/
+  * Models/
+  * Tests/
+
+Testing Requirements:
+
+* Add unit tests for all API endpoints
+* Validate success and failure scenarios
+* Ensure basic test coverage
+
+PR Requirements:
+
+* Create a feature branch: feature/AI-C#-201
+* Commit message: "feat: add customer CRUD API with tests"
+* Create a draft pull request
+* Perform AI-based PR review
+
+Review Guidelines:
+
+* Check BaseApiController usage
+* Validate request/response handling
+* Ensure validation is implemented
+* Verify logging and exception handling
+* Check naming conventions
+* Ensure test coverage
+
+Priority: High
